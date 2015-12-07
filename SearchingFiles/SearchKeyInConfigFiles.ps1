@@ -1,0 +1,1 @@
+Get-ChildItem . -include *.config -recurse | Select-String -pattern "valueToSearchFor" | group path | select name
