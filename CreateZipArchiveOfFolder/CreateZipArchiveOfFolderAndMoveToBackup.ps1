@@ -10,7 +10,7 @@ $SourceFolder = $PSScriptRoot
 $SourceFolderName =  Split-Path $SourceFolder -Leaf
 
 #The example in this script is just for the testing purpose, you should use real backup location
-#e.g. $BackupFolder = "c:\Backup"
+#e.g. $BackupFolder = "c:\Backup\"
 $BackupFolder = (Get-Item $SourceFolder).Parent.FullName + "\Backup\"
 $CurrentDate = (Get-Date).ToString("yyyyMMdd")
 #e.g. "C:\Backup\20150501"
